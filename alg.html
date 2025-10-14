@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang = "ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Решение алгоритмической задачи</title>
+    <link rel="stylesheet" href="form_styles.css">
+</head>
+
+<body>
+    <p name="formulation">Имеется коробка со сторонами: A × B × C. Определить, пройдёт ли она в дверь с размерами M × K.</p>
+    <form id="boxForm">
+<p>Формулировка задачи 
+                <br><textarea cols="60" rows="4" id="task" name="formulation">Имеется коробка со сторонами: A × B × C. Определить, пройдёт ли она в дверь с размерами M × K.</textarea></p>
+<p>A: <input id="a" name="a" type="number" value="10"></p>
+            <p>B: <input id="b" name="b" type="number" value="20"></p>
+            <p>C: <input id="c" name="c" type="number" value="19"></p>
+            <p>M: <input id="M" name="M" type="number" value="20"></p>
+            <p>K: <input id="K" name="K" type="number" value="19"></p>
+            <p>Результат: <input id="result" type="text" name="result" value="не определен"></p>
+            <p><input id="verify" type="button" value="Проверить" style="background:#d46b8a; color:white; border:none; border-radius:8px; 
+              padding:10px 20px; font-size:16px; cursor:pointer;"></p>
+    </form>
+
+<script src="./DOM_JS/alg.js"></script>
+<p>
+<a href="page1.html" style="background:#ffafc7; color:white; border:none; border-radius:8px; 
+              padding:10px 20px; font-size:16px; cursor:pointer;">Main</a>
+</p>   
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+   <head>
+      <meta charset="UTF-8">
+      <title>DOM_JS. Считываем информацию из DOM</title>
+   </head>
+   <body>
+
+     
+<table>
+   <tr>
+      <td>
+<table border="1" width="500px">
+   <tr>
+      <td colspan="2" align="center" height="100px">Российская Федерация</td>
+   </tr>
+   <tr>
+      <td colspan="2">Паспорт выдан <span id="vydan">ГУ МВД РОССИИ ПО ГОР. САНКТ-ПЕТЕРБУРГУ И ЛЕНИНГРАДСКОЙ ОБЛАСТИ<span> </td>
+   </tr>
+   <tr>
+
+      <td height="100px">Дата выдачи <span id="vydan_date">20.02.2020</span></td>
+      
+      <td>Код подразделения <span id="kod">100-500</span></td>
+      <tr>
+         <td colspan="2" align="right" height="40px">Личный код <span id="lichny_kod">444</span></td>
+      </tr>
+      <tr>
+         <td colspan="2" align ="left" height="40px">Подпись сотрудника  <span id="podpis"><img src='picture/подпись.png' height="30px"></span></td>
+      </tr>
+      <tr>
+         <td colspan="2" align="right" height="40px">Личная подпись  <span id="lichnaya_podpis"><img src='picture/личная_подпись.png' height="30px"></span></td>
+      </tr>
+
+   </tr>
+</table>
+
+<table border="1" width="500px">
+   <tr>
+      <td><img src='picture/1flow.png' height="100px"></td>
+      <td>
+         <table border="1">
+            <tr>
+               <td colspan="2">Фамилия: <span id="second_name">Яненко</span> </td>
+            </tr>
+            <tr>
+               <td colspan="2">Имя:<span id="name"> Маргарита</span></td>
+            </tr>
+            <tr>
+               <td colspan="2">Отчество:<span id="third_name"> Владимировна</span></td>
+            </tr>
+            <tr>
+               <td>Пол:<span id="sex"> ЖЕН.</span></td>
+               <td>Дата рождения: <span id="date_of_birth"> 04.04.2006</span></td>
+            </tr>
+         </table>
+      </td>
+   </tr>
+   
+</table>
+</td>
+<td>
+           <img src="picture/dom.png" height="600px">
+</td>
+</tr>
+</table>   
+
+<p>Чтобы изменить текст на латиницу, нажмите на кнопку:</p>
+      
+<p><input type ="button" value="change" id="change" style="background:#d46b8a; color:white; border:none; border-radius:8px; 
+              padding:10px 20px; font-size:16px; cursor:pointer;"></p>
+    
+  <script src="./DOM_JS/edit.js"></script><br>
+
+<a href="page1.html" style="background:#ffafc7; color:white; border:none; border-radius:8px; 
+              padding:10px 20px; font-size:16px; cursor:pointer;">Main</a>
+   
+
+</body>
+</html>

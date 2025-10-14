@@ -1,0 +1,75 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>form</title>
+    <link rel="stylesheet" href="form_styles.css">
+  </head>
+  <body>
+    <h1>FEEDBACK FORM</h1>
+
+<nav>
+  <ul class="nav">
+    <li><a href="page1.html">Main</a></li>
+    <li><a href="page2.html" target="_self" >Different colors of roses</a></li>
+    <li><a href="page3.html" target="_self" >Different colors of peonies</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/List_of_plants_with_symbolism " target="_blank">Click to learn more</a></li>
+  <li><a href="page4.html" target="_self"><img height="40px" src="picture/1flow.png"></a>
+</ul>
+</nav>
+
+    <h2>Send us your input data and we will reply with advice on which bouquet to choose.</h2>
+
+<form action="https://formsubmit.co/yanenkomargo116@gmail.com" method='POST' target='_self'>
+
+    <p>Name: <input type="Text" name="name" ></p>
+    <p>Surname: <input type="Text" name="last_name" ></p>
+    <p>Group: <input type="Text" name="group" ></p>
+    <p>Phone number: <input type="Text" name="phone" ></p>
+    <p>Email: <input type="Text" name="email" ></p>
+    <p>Age: <input type="Number" name="age"  value="0"></p>
+
+    <p>Who do you want to give flowers to?<br>
+        <input type="Radio" name="recipient" value="Romantic partner">Romantic partner
+        <input type="Radio" name="recipient" value="Relative" checked >Relative
+        <input type="Radio" name="recipient" value="Friend">Friend
+        <input type="Radio" name="recipient" value="Colleague" >Colleague
+      </p>
+
+    <p>What kind of feelings do you want to express with flowers?<br>
+        <input type="Checkbox" name="feelings"  value="Love&passion" checked>Love and passion
+        <input type="Checkbox"  name="feelings"   value="Gratitude&appreciation" >Gratitude and appreciation
+        <input type="Checkbox" name="feelings" value="Wishes for recovery" >Wishes for recovery
+        <input type="Checkbox" name="feelings"  value="Apology&regret" >Apology and regret
+        <input type="Checkbox"  name="feelings"   value="Congratulations" >Congratulations
+        <input type="Checkbox" name="feelings" value="Good luck wishes" checked>Good luck wishes
+    </p>
+
+    <p>Occasion for the bouquet:
+        <select name="occasions">
+            <OPTION value="birthday">birthday</OPTION>
+            <OPTION value="wedding">wedding</OPTION>
+            <OPTION value="anniversary">anniversary</OPTION>
+            <OPTION value="no occasion">no occasion</OPTION>
+            <OPTION value="get well soon">get well soon</OPTION>
+            <OPTION value="apology">apology</OPTION>
+        </select>
+    </p>
+
+    <p>Comment for the florist
+        <br>
+        <TEXTAREA cols=80 rows=4 name="textarea" >I want something elegant... </TEXTAREA>
+    </p>
+
+    <p>Preferred delivery date <input type="date" name="user_date"  value='2025-10-02'></p>
+    <p>Secret word: <input type="Password" name="password" size=9  value="123"></p>
+    
+
+    <input type="hidden" name="function"  value="flowers-request">
+
+    <p>
+        <input type="Reset"  name="Reset"  value="Reset">
+        <input type="Submit" name="submit"  value="Submit">
+    </p>
+
+</form>
+  </body>
